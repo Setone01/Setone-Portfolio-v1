@@ -1,38 +1,27 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { HiArrowDownTray } from "react-icons/hi2";
+import { HiArrowDownTray, HiXMark, HiOutlineBars3 } from "react-icons/hi2";
 
 const Header = () => {
-  //to change burger classes
-  const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
-  const [navLink, setNavLink] = useState("menu hidden");
-  const [isMenuClicked, setIsMenuClicked] = useState("false");
-
-  const updateMenu = () => {
-    if(!isMenuClicked) {
-      setBurgerClass('burger-bar clicked')
-      setNavLink('menu visible')
-    }
-    else {
-      setBurgerClass('burger-bar unclicked')
-      setNavLink('menu hidden')
-    }
-    setIsMenuClicked(!isMenuClicked)
-  }
+  const [isMobile, setIsMobile] = useState(false);
 
   return (
-    <MainHeader>
+    <MainHeader className="mainHeader">
       <div className="navContainer">
         <Link to="/" className="navLogo">
-          <h4>Setonhacks</h4>
+          <h4>Setone.dev</h4>
         </Link>
-        <ul className="navLink" >
+        <ul
+          className={isMobile ? "navMobile" : "navLink"}
+          /*onClick={() => setIsMobile(false)}*/
+        >
           <li>
-            <Link to="/home" className="link">
+            <Link to="/" className="link">
               Home
             </Link>
           </li>
+
           <li>
             <Link to="/about" className="link">
               About
@@ -53,11 +42,8 @@ const Header = () => {
             <HiArrowDownTray className="HeaderIcon" />
           </Link>
         </ul>
-
-        <div className="burger_menu" onClick={updateMenu}>
-          <div className={burger_class}></div>
-          <div className={burger_class}></div>
-          <div className={burger_class}></div>
+        <div className="mobileToggle" onClick={() => setIsMobile(!isMobile)}>
+          {isMobile ? <HiXMark /> : <HiOutlineBars3 />}
         </div>
       </div>
     </MainHeader>
@@ -74,9 +60,6 @@ const MainHeader = styled.div`
   display: grid;
   place-items: center;
   z-index: 99;
-  @media screen and (max-width: 800px) {
-    width: 100%;
-  }
 
   .navContainer {
     width: 90%;
@@ -93,8 +76,9 @@ const MainHeader = styled.div`
 
   h4 {
     color: rgb(255, 255, 255);
-    font-weight: 200;
+    font-weight: 500;
     font-size: 1.5rem;
+    font-family: "Raleway";
   }
 
   .navLink {
@@ -103,59 +87,88 @@ const MainHeader = styled.div`
     align-items: flex-end;
   }
 
-  .navLink a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 1rem;
-    font-weight: 100;
-  }
-
-  .burger_menu {
-    display: none;
+  .link {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    font-family: "Raleway";
   }
 
   .HeaderButton {
     padding: 0.1rem 0.4rem;
-    border: 1.2px solid #fff;
+    border: 1.3px solid #fff;
     background: transparent;
     color: #f6f8f9;
     font-size: 1rem;
+    font-weight: 500;
     margin: 0;
     transition: 0.3s ease-in-out;
     outline: none;
   }
 
-  .HeaderIcon{
+  .HeaderIcon {
     margin: 0 0.6rem;
   }
 
+  .mobileToggle {
+    display: none;
+  }
+
   @media screen and (max-width: 800px) {
-    
-    .navLink{
+    .navContainer {
+      width: 100%;
+    }
+
+    .navLogo {
+      margin-left: 5%;
+    }
+    .navLink {
       display: none;
     }
 
-    .burger_menu{
-      height: 50%;
-      width: 3em;
+    .navMobile {
+      position: absolute;
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
-      justify-content: space-between;
-      cursor: pointer;
+      align-items: flex-start;
+      right: 0;
+      top: 100%;
+      width: 70%;
+      background-color: black;
+      height: 80vh;
+      padding-left: 1.5rem;
+      transition: all 0.5s ease-in-out;
+    }
+    .link {
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 300;
+      background-color: none;
     }
 
-    .burger-bar{
-      width: 3em;
-      height: 0.2em;
-      background-color: rgb(255, 255, 255);
-      border-radius: 0.5em;
+    li {
+      margin-bottom: 1.8rem;
     }
 
-    .menu{
-      width: 100%;
-      height: 100vh;
-      background-color: #fff;
+    .HeaderButton {
+      font-size: 1.3rem;
+      padding: 7px 8px;
+    }
+    .HeaderIcon {
+      font-size: 1.24rem;
+      margin-bottom: -2px;
+    }
+
+    .mobileToggle {
+      display: block;
+      margin-right: 5%;
+      svg {
+        font-size: 35px;
+        color: #fff;
+        margin-top: 10px;
+        outline: none;
+        cursor: pointer;
+      }
     }
   }
 `;
