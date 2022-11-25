@@ -43,7 +43,11 @@ const skills = () => {
         <h2>My Skills</h2>
         <div className="SkillContent">
           {stacks.map((opt) => {
-            return <div className="Skill_set" key={opt.id}>{opt.title}</div>;
+            return (
+              <div className="Skill_set" key={opt.id}>
+                {opt.title}
+              </div>
+            );
           })}
         </div>
       </div>
@@ -66,12 +70,12 @@ const Skill = styled.div`
     align-items: center;
   }
 
-  .Skill_set{
+  .Skill_set {
     padding: 0.6rem 2rem;
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
     font-size: 1.1rem;
-    background: rgba(153,153,153,.2);
+    background: rgba(153, 153, 153, 0.2);
     border-radius: 5px;
     font-weight: 500;
     color: #666;
@@ -84,8 +88,16 @@ const Skill = styled.div`
   }
 
   @media (max-width: 800px) {
-    .SkillContainer{
-        margin-top: -4rem;
+    .SkillContainer {
+      margin-top: -4rem;
+
+      h2 {
+        font-size: 1.6rem;
+      }
+    }
+    .Skill_set{
+        font-size: 1rem;
+        padding: 0.4rem 1.4rem;
     }
   }
 `;
