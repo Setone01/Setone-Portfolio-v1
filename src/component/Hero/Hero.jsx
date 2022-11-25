@@ -28,7 +28,7 @@ const Hero = () => {
 
 const MainSection = styled.div`
   width: 100%;
-  margin: 3rem 0 6rem 0;
+  height: 100vh;
   /* background-color: #506470; */
 
   .contentWrapper {
@@ -42,7 +42,7 @@ const MainSection = styled.div`
   }
 
   .contentTop {
-    margin-top: 5rem;
+    margin-top: 7rem;
   }
   h3 {
     font-size: 2.8rem;

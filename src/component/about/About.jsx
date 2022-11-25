@@ -14,17 +14,16 @@ const About = () => {
           <div className="Flex1">
             <h2>Get to know me!</h2>
             <p>
-              <span>Hi!</span>Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Sapiente soluta rerum quos quasi odit provident nisi
-              delectus libero, perferendis aliquid asperiores ducimus numquam
-              deserunt amet eos repudiandae ex tempore. Ex obcaecati repellendus
-              iste dolorem aliquid similique et, eos velit perferendis
+              <span>Hi,</span> Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Sapiente soluta rerum quos quasi odit provident
+              nisi delectus libero, perferendis aliquid asperiores ducimus
+              numquam deserunt amet eos repudiandae ex tempore. Ex obcaecati
+              repellendus iste dolorem aliquid similique et, eos velit
+              perferendis
             </p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-              soluta rerum quos quasi odit provident nisi delectus libero,
-              perferendis aliquid asperiores ducimus numquam deserunt amet eos
-              repudiandae ex tempore. Ex obcaecati repellendus iste dolorem.
+              soluta rerum quos quasi odit provident nisi delectus libero
             </p>
           </div>
           <div className="Flex2">
@@ -38,7 +37,8 @@ const About = () => {
 
 const MainContainer = styled.div`
   width: 100%;
-  padding: 1rem 0;
+  height: 100vh;
+  padding-top: 4.5rem;
 
   .contentWrapper {
     display: flex;
@@ -46,11 +46,11 @@ const MainContainer = styled.div`
     flex-flow: column;
     width: 90%;
     height: max-content;
-    margin: 4rem auto;
+    margin: 0 auto;
     gap: 8rem;
   }
   .ContentTitle {
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
   }
 
   h4 {
@@ -90,15 +90,14 @@ const MainContainer = styled.div`
   }
 
   @media (max-width: 800px) {
-
-    .ContentTitle{
-      h4{
+    .ContentTitle {
+      h4 {
         font-size: 2rem;
         margin-bottom: -1rem;
       }
     }
-    .Flex1{
-      h2{
+    .Flex1 {
+      h2 {
         font-size: 1.6rem;
       }
     }
@@ -107,8 +106,11 @@ const MainContainer = styled.div`
       flex-flow: column;
 
       p {
-        font-size:1.2rem;
+        font-size: 1rem;
         font-weight: 300;
+      }
+      span {
+        font-size: 1.4rem;
       }
     }
   }
