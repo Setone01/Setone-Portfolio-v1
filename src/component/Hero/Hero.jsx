@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+// import { HiArrowDownTray } from "react-icons/hi2";
+
 
 const Hero = () => {
   return (
@@ -14,6 +16,10 @@ const Hero = () => {
             Lowrem ipsum dolor sit amet consectetur adipisicing elit. Eum
             expedita earum ratione alias vel ad corporis quis, facere eveniet
           </p>
+          {/* <div className="HeaderButton">
+            Download CV
+            <HiArrowDownTray className="HeaderIcon" />
+          </div> */}
         </div>
       </div>
     </MainSection>
@@ -30,7 +36,7 @@ const MainSection = styled.div`
     justify-content: center;
     align-items: flex-start;
     flex-flow: column;
-    width: 80%;
+    width: 90%;
     height: 80vh;
     margin: 0 auto;
   }
@@ -52,7 +58,7 @@ const MainSection = styled.div`
   }
 
   .contentBottom {
-    padding-top: 3rem;
+    margin-top: 1rem;
   }
 
   p {
@@ -61,6 +67,24 @@ const MainSection = styled.div`
     font-family: "Raleway";
     color: #f5f5e9;
     line-height: 1.8em;
+    margin-bottom: 3rem;
+  }
+
+  .HeaderButton {
+    width: max-content;
+    background: transparent;
+    background-color: #3b3b3b;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500; 
+    padding: 0.8rem 0.9rem;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    outline: none;
+  }
+
+  .HeaderIcon {
+    margin: 0 0.6rem;
   }
 
   @media (max-width: 800px) {
