@@ -9,10 +9,6 @@ const About = () => {
       <div className="contentWrapper">
         <div className="ContentTitle">
           <h4>About Me</h4>
-          {/* <p>
-            Here you will find more information about me, what I do, and my
-            current skills mostly in terms of programming and technology
-          </p> */}
         </div>
         <div className="MainContent">
           <div className="Flex1">
@@ -23,17 +19,12 @@ const About = () => {
               delectus libero, perferendis aliquid asperiores ducimus numquam
               deserunt amet eos repudiandae ex tempore. Ex obcaecati repellendus
               iste dolorem aliquid similique et, eos velit perferendis
-              doloremque aspernatur laboriosam quisquam cupiditate vero tempora,
-              necessitatibus aliquam perspiciatis.
             </p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
               soluta rerum quos quasi odit provident nisi delectus libero,
               perferendis aliquid asperiores ducimus numquam deserunt amet eos
-              repudiandae ex tempore. Ex obcaecati repellendus iste dolorem
-              aliquid similique et, eos velit perferendis doloremque aspernatur
-              laboriosam quisquam cupiditate vero tempora, necessitatibus
-              aliquam perspiciatis.
+              repudiandae ex tempore. Ex obcaecati repellendus iste dolorem.
             </p>
           </div>
           <div className="Flex2">
@@ -47,6 +38,7 @@ const About = () => {
 
 const MainContainer = styled.div`
   width: 100%;
+  padding: 1rem 0;
 
   .contentWrapper {
     display: flex;
@@ -98,12 +90,24 @@ const MainContainer = styled.div`
   }
 
   @media (max-width: 800px) {
+
+    .ContentTitle{
+      h4{
+        font-size: 2rem;
+        margin-bottom: -1rem;
+      }
+    }
+    .Flex1{
+      h2{
+        font-size: 1.6rem;
+      }
+    }
     .MainContent {
       display: flex;
       flex-flow: column;
 
       p {
-        font-size:1.5rem;
+        font-size:1.2rem;
         font-weight: 300;
       }
     }
