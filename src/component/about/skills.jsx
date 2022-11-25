@@ -71,7 +71,7 @@ const Skill = styled.div`
   }
 
   .Skill_set {
-    padding: 0.6rem 2rem;
+    padding: 0.4rem 1.5rem;
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
     font-size: 1.1rem;
