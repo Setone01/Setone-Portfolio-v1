@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { HiArrowDownTray, HiXMark, HiOutlineBars3 } from "react-icons/hi2";
+import { HiXMark, HiOutlineBars3 } from "react-icons/hi2";
 
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -37,10 +37,6 @@ const Header = () => {
               Contact
             </Link>
           </li>
-          <Link to="/resume" className="HeaderButton">
-            Resume
-            <HiArrowDownTray className="HeaderIcon" />
-          </Link>
         </ul>
         <div className="mobileToggle" onClick={() => setIsMobile(!isMobile)}>
           {isMobile ? <HiXMark /> : <HiOutlineBars3 />}
@@ -94,22 +90,6 @@ const MainHeader = styled.div`
     font-family: "Raleway";
   }
 
-  .HeaderButton {
-    padding: 0.1rem 0.4rem;
-    border: 1.3px solid #fff;
-    background: transparent;
-    color: #f6f8f9;
-    font-size: 1rem;
-    font-weight: 500;
-    margin: 0;
-    transition: 0.3s ease-in-out;
-    outline: none;
-  }
-
-  .HeaderIcon {
-    margin: 0 0.6rem;
-  }
-
   .mobileToggle {
     display: none;
   }
@@ -133,21 +113,20 @@ const MainHeader = styled.div`
       align-items: flex-start;
       right: 0;
       top: 100%;
-      width: 70%;
+      width: 80%;
+      height: 70vh;
       background-color: black;
-      height: 80vh;
-      padding-left: 1.5rem;
+      padding-left: 2.4rem;
       transition: all 0.5s ease-in-out;
     }
     .link {
       color: #fff;
       font-size: 1.3rem;
       font-weight: 300;
-      background-color: none;
     }
 
     li {
-      margin-bottom: 1.8rem;
+      margin-bottom: 2.3rem;
     }
 
     .HeaderButton {
