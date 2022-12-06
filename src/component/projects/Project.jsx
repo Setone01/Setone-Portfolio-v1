@@ -125,7 +125,7 @@ const Section = styled.div`
 const LinkSmall = styled.small`
   margin-right: 2rem;
   font-weight: 400;
-  color: #969090;
+  color: #6c7075;
   transition: 0.3s ease-in-out;
   cursor: pointer;
   z-index: 10;

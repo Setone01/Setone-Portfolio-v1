@@ -80,7 +80,7 @@ const MainContainer = styled.div`
     font-size: 2.1rem;
     font-weight: 900;
     margin-bottom: 2rem;
-    color: #969090;
+    color: #6c7075;
   }
   span {
     font-size: 2rem;
@@ -94,7 +94,8 @@ const MainContainer = styled.div`
     }
     .Flex1 {
       h1 {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
+        font-weight: 900;
         margin-bottom: 0.5rem;
       }
     }
