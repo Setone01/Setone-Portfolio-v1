@@ -40,7 +40,7 @@ const skills = () => {
   return (
     <Skill>
       <div className="SkillContainer">
-        <h2>My Skills</h2>
+        <h1>My Skills</h1>
         <div className="SkillContent">
           {stacks.map((opt) => {
             return (
@@ -62,6 +62,7 @@ const Skill = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 10;
   }
 
   .SkillContent {
@@ -77,27 +78,30 @@ const Skill = styled.div`
     font-size: 1.1rem;
     background: rgba(153, 153, 153, 0.2);
     border-radius: 5px;
-    font-weight: 500;
+    font-weight: 400;
     color: #666;
+    z-index: 10;
   }
 
-  h2 {
+  h1 {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 2rem;
+    color: #969090;
   }
 
   @media (max-width: 800px) {
     .SkillContainer {
       margin-top: -4rem;
 
-      h2 {
-        font-size: 1.6rem;
+      h1 {
+        font-size: 2.5rem;
       }
     }
-    .Skill_set{
-        font-size: 1rem;
-        padding: 0.4rem 1.4rem;
+    .Skill_set {
+      font-size: 1.1rem;
+      padding: 0.4rem 1.4rem;
+      font-weight: 600;
     }
   }
 `;

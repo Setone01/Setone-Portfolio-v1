@@ -1,28 +1,32 @@
 import React from "react";
 import styled from "styled-components";
+import { ContactTitle } from "../contact/Contact";
+// import ProjUI from "./ProjUI";
+import Proj from "../dummyData";
+import { FaRegEye } from "react-icons/fa";
+import { IoIosGitBranch } from "react-icons/io";
 
 const Project = () => {
   return (
     <Section>
       <div className="Container">
-        <div className="Flex1">
-          <div className="FlexTitle">
-            <h4>Latest Work</h4>
-            <h2>Project</h2>
-          </div>
-          <div className="FlexNumber">
-            <h1>02</h1>
-          </div>
+        <div className="Title">
+          <ContactTitle>Project</ContactTitle>
         </div>
-        <div className="Flex2"></div>
-        <div className="ImageWrapper">
-          <div></div>
-        </div>
-        <div className="Content">
-          <div className="Title">
-
-          </div>
-          <span></span>
+        <div className="ProjCont">
+          {Proj.map((opt) => {
+            return (
+              <div key={opt.id} className="ProjWrapper">
+                <h3>{opt.title}</h3>
+                <small>{opt.stack}</small>
+                <p>{opt.desc}</p>
+                <div className="ProjBottom">
+                  <LinkSmall ><FaRegEye /> Live</LinkSmall>
+                  <LinkSmall ><IoIosGitBranch /> Code</LinkSmall>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </Section>
@@ -31,45 +35,104 @@ const Project = () => {
 
 const Section = styled.div`
   width: 100%;
+  height: max-content;
 
   .Container {
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    width: 90%;
-    height: max-content;
+    width: 80%;
+    height: 100%;
     margin: 0 auto;
-  }
-
-  .Flex1{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    gap: 1rem;
+    flex-flow: column;
+    padding: 3rem 0;
+    z-index: 10;
   }
 
-  .FlexTitle{
-    margin-bottom: -5rem;
+  .Title {
+    margin-bottom: 2rem;
   }
-  h1 {
-    text-align: right;
-    font-size: 10rem;
+
+  .ProjCont {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    row-gap: 1.7rem;
+    column-gap: 1.9rem;
+    margin-bottom: 3rem;
   }
-  h4 {
-    font-size: 1.2rem;
-    font-weight: 200;
-    margin-bottom: -0.7rem;
-    color: orange;
-  }
-  h2 {
-    font-size: 2.8rem;
+
+  h3 {
+    font-size: 1.9rem;
     font-weight: 500;
-    margin-bottom: 1.5rem;
-    font-family: "Raleway";
-    text-decoration: underline;
-    text-transform: capitalize;
+    margin-bottom: -0.8rem;
+  }
+
+  p {
+    /* font-size: 1.2rem; */
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .ProjWrapper {
+    width: 100%;
+    height: max-content;
+    background-color: #121212;
+    border-radius: 3px;
+    padding: 1rem 2rem;
+    row-gap: 0.9rem;
+  }
+  small {
+    font-size: 1rem;
+    font-weight: 500;
+
+  }
+
+  .ProjBottom {
+    display: flex;
+    align-items: flex-start;
+  }
+  .ProjIcon {
+    margin-right: 1rem;
+    color: blue;
+    cursor: pointer;
+  }
+
+  @media (max-width: 800px) {
+    .Container {
+      height: max-content;
+      margin-top: 5rem;
+    }
+
+    small{
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    p{
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    .ProjCont {
+      grid: unset;
+    }
   }
 `;
+
+const LinkSmall = styled.small`
+  margin-right: 2rem;
+  font-weight: 400;
+  color: #969090;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 10;
+
+  :hover{
+    color: #fff;
+  }
+`
 
 export default Project;

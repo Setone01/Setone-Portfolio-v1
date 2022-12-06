@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 // import { HiArrowDownTray } from "react-icons/hi2";
 
-
 const Hero = () => {
   return (
     <MainSection>
@@ -13,13 +12,10 @@ const Hero = () => {
         </div>
         <div className="contentBottom">
           <p>
-            Lowrem ipsum dolor sit amet consectetur adipisicing elit. Eum
-            expedita earum ratione alias vel ad corporis quis, facere eveniet
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+            aliquam quis iure laborum delectus sunt illum! Ex odit ipsum dolore
+            sed autem nostrum ipsa cum, quis illo, dolorum ut nulla dolores
           </p>
-          {/* <div className="HeaderButton">
-            Download CV
-            <HiArrowDownTray className="HeaderIcon" />
-          </div> */}
         </div>
       </div>
     </MainSection>
@@ -36,9 +32,10 @@ const MainSection = styled.div`
     justify-content: center;
     align-items: flex-start;
     flex-flow: column;
-    width: 90%;
+    width: 80%;
     height: 80vh;
     margin: 0 auto;
+    z-index: 10;
   }
 
   .contentTop {
@@ -51,8 +48,8 @@ const MainSection = styled.div`
   }
 
   h2 {
-    font-size: 6rem;
-    font-weight: 500;
+    font-size: 8rem;
+    font-weight: 800;
     font-family: "Raleway";
     line-height: 1.2em;
   }
@@ -62,12 +59,13 @@ const MainSection = styled.div`
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 200;
     font-family: "Raleway";
     color: #f5f5e9;
     line-height: 1.8em;
     margin-bottom: 3rem;
+    width: 70rem;
   }
 
   .HeaderButton {
@@ -76,7 +74,7 @@ const MainSection = styled.div`
     background-color: #3b3b3b;
     color: #fff;
     font-size: 2rem;
-    font-weight: 500; 
+    font-weight: 500;
     padding: 0.8rem 0.9rem;
     border-radius: 5px;
     transition: 0.3s ease-in-out;
@@ -88,15 +86,25 @@ const MainSection = styled.div`
   }
 
   @media (max-width: 800px) {
+    .contentWrapper{
+      width: 90%;
+      margin-top: 3.5rem;
+    }
+    h3{
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
     h2 {
       max-width: 150px;
       font-size: 4rem;
-      font-weight: 500;
+      font-weight: 800;
     }
 
     p {
-      font-size: 1.8rem;
-      line-height: 1.8em;
+      font-size: 1.3rem;
+      font-weight: 300;
+      line-height: 1.7em;
+      width: 100%;
     }
   }
 `;

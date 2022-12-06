@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { ContactTitle } from "../contact/Contact";
 // import NumberCard from '../UI card/NumberCard'
 import Skill from "./skills";
 
@@ -8,11 +9,11 @@ const About = () => {
     <MainContainer>
       <div className="contentWrapper">
         <div className="ContentTitle">
-          <h4>About Me</h4>
+          <ContactTitle>About Me</ContactTitle>
         </div>
         <div className="MainContent">
           <div className="Flex1">
-            <h2>Get to know me!</h2>
+            <h1>Get to know me!</h1>
             <p>
               <span>Hi,</span> Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Sapiente soluta rerum quos quasi odit provident
@@ -37,30 +38,27 @@ const About = () => {
 
 const MainContainer = styled.div`
   width: 100%;
-  height: 100vh;
-  padding-top: 4.5rem;
+  height: auto;
 
   .contentWrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-flow: column;
-    width: 90%;
+    width: 70%;
     height: max-content;
     margin: 0 auto;
+    padding: 6rem 0;
     gap: 8rem;
+    z-index: 10;
   }
-  .ContentTitle {
-    /* margin-bottom: 0; */
-  }
-
-  h4 {
+  /* .ContentTitle {
     text-align: center;
-    font-size: 2.7rem;
-    font-weight: 700;
-  }
+  } */
 
   .MainContent {
     display: flex;
+    justify-content: space-between;
     gap: 6rem;
     margin-top: -5rem;
   }
@@ -70,8 +68,7 @@ const MainContainer = styled.div`
     p {
       color: #f5f5e9;
       max-width: 60rem;
-      font-size: 1.3rem;
-      font-weight: 200;
+      font-weight: 400;
       margin-bottom: 1.5rem;
       line-height: 1.6em;
     }
@@ -79,10 +76,11 @@ const MainContainer = styled.div`
   .Flex2 {
     flex-basis: 50%;
   }
-  h2 {
-    font-size: 2rem;
-    font-weight: 600;
+  h1 {
+    font-size: 2.1rem;
+    font-weight: 900;
     margin-bottom: 2rem;
+    color: #969090;
   }
   span {
     font-size: 2rem;
@@ -90,24 +88,25 @@ const MainContainer = styled.div`
   }
 
   @media (max-width: 800px) {
-    .ContentTitle {
-      h4 {
-        font-size: 2rem;
-        margin-bottom: -1rem;
-      }
+    .contentWrapper {
+      width: 90%;
+      margin-top: 1.5rem;
     }
     .Flex1 {
-      h2 {
-        font-size: 1.6rem;
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
       }
     }
     .MainContent {
       display: flex;
       flex-flow: column;
+      margin-top: -7rem;
 
       p {
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: 300;
+        line-height: 1.5em;
       }
       span {
         font-size: 1.4rem;
