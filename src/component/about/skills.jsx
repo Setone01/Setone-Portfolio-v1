@@ -78,16 +78,16 @@ const Skill = styled.div`
     font-size: 1.1rem;
     background: rgba(153, 153, 153, 0.2);
     border-radius: 5px;
-    font-weight: 400;
-    color: #666;
+    font-weight: 200;
+    color: #6c7075;
     z-index: 10;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.1rem;
     font-weight: 600;
     margin-bottom: 2rem;
-    color: #969090;
+    color: #6c7075;
   }
 
   @media (max-width: 800px) {
@@ -95,7 +95,8 @@ const Skill = styled.div`
       margin-top: -4rem;
 
       h1 {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
+        font-weight: 900;
       }
     }
     .Skill_set {

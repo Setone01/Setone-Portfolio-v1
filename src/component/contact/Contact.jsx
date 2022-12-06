@@ -61,6 +61,7 @@ export const ContactTitle = styled.h2`
   margin-bottom: 2rem;
   @media (max-width: 800px) {
     font-weight: 400;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
     margin-top: -1.8rem;
   }
@@ -70,7 +71,7 @@ const Title = styled.h1`
   font-size: 5rem;
   margin-bottom: 1.5rem;
   font-weight: 900;
-  color: #969090;
+  color: #6c7075;
   @media (max-width: 800px) {
     margin-bottom: 0;
     font-size: 2.5rem;
@@ -95,7 +96,7 @@ const Para = styled.p`
 `;
 const Btn = styled.div``;
 const Btn1 = styled.button`
-  background-color: #888585;
+  background-color: #6c7075;
   padding: 0.8rem 1.8rem;
   border-radius: 4px;
   border: none;
@@ -123,7 +124,7 @@ const Btn2 = styled.button`
   background-color: transparent;
   padding: 0.8rem 1.5rem;
   border-radius: 5px;
-  border: 1.4px solid #969090;
+  border: 1.4px solid #6c7075;
   color: #fff;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -171,7 +172,7 @@ const CopyTitle = styled.p`
 const Socials = styled.div`
 margin-left: 2rem;
   .Icon {
-    color: #969090;
+    color: #6c7075;
     font-size: 1.5rem;
     margin-right: 2rem;
     transition: 0.3s all ease-in-out;
