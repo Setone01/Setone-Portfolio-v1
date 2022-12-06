@@ -48,7 +48,7 @@ const Header = () => {
 
 const MainHeader = styled.div`
   width: 100%;
-  height: 4rem;
+  height: 6rem;
   top: 0;
   left: 0;
   background: rgb(0, 0, 0);
@@ -58,7 +58,7 @@ const MainHeader = styled.div`
   z-index: 99;
 
   .navContainer {
-    width: 90%;
+    width: 80%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -86,7 +86,7 @@ const MainHeader = styled.div`
   .link {
     color: #fff;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-family: "Raleway";
   }
 
