@@ -78,7 +78,7 @@ const Skill = styled.div`
     font-size: 1.1rem;
     background: rgba(153, 153, 153, 0.2);
     border-radius: 5px;
-    font-weight: 200;
+    font-weight: 600;
     color: #6c7075;
     z-index: 10;
   }
@@ -102,7 +102,7 @@ const Skill = styled.div`
     .Skill_set {
       font-size: 1.1rem;
       padding: 0.4rem 1.4rem;
-      font-weight: 600;
+      font-weight: 400;
     }
   }
 `;
