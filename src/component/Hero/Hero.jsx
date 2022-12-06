@@ -24,7 +24,7 @@ const Hero = () => {
 
 const MainSection = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   /* background-color: #506470; */
 
   .contentWrapper {
@@ -86,9 +86,10 @@ const MainSection = styled.div`
   }
 
   @media (max-width: 800px) {
+    height: 70vh;
     .contentWrapper{
       width: 90%;
-      margin-top: 3.5rem;
+      /* margin-top: 2rem; */
     }
     h3{
       font-size: 1.8rem;
