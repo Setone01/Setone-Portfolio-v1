@@ -1,10 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { BsGithub, BsFacebook, BsLinkedin, BsTwitter } from "react-icons/bs";
+import myresume from "../Asset/Fem Athonnagbo.pdf";
+import { useState } from "react";
 
 const Contact = () => {
+  const [isDropdown, setIsDropdown] = useState(false);
+
   return (
-    <Section>
+    <Section id="contact">
       <ContactWrapper>
         <ContactTitle>Contact</ContactTitle>
 
@@ -15,9 +19,20 @@ const Contact = () => {
           projects or collaborations.
         </Para>
         <Btn>
-          <Btn1>Hire Me</Btn1>
-          <Btn2>Resume</Btn2>
+          <Btn1 onClick={() => setIsDropdown(!isDropdown)}>Hire Me</Btn1>
+          <Btn2 download href={myresume}>
+            Resume
+          </Btn2>
         </Btn>
+        {isDropdown ? (
+          <Grid>
+            <Box href="mailto:femicymon@gmail.com">femicymon@gmail.com</Box>
+            <Box1>+2348103142141</Box1>
+          </Grid>
+        ) : (
+          " "
+        )}
+
         <Footer>
           <Copyright>
             <CopyTitle> &copy; Copyright Setone 2022</CopyTitle>
@@ -57,7 +72,7 @@ const ContactWrapper = styled.div`
 export const ContactTitle = styled.h2`
   font-size: 2.7rem;
   font-weight: 400;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
   margin-bottom: 2rem;
   @media (max-width: 800px) {
     font-weight: 400;
@@ -94,22 +109,27 @@ const Para = styled.p`
     width: 100%;
   }
 `;
-const Btn = styled.div``;
+const Btn = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+`;
 const Btn1 = styled.button`
   background-color: #6c7075;
-  padding: 0.8rem 1.8rem;
-  border-radius: 4px;
+  padding: 0.9rem 1.8rem;
+  border-radius: 3px;
   border: none;
   margin-right: 0.5rem;
   color: #fff;
   font-size: 1.2rem;
   text-transform: uppercase;
+  letter-spacing: 1px;
   font-weight: 400;
   font-family: "Raleway";
   transition: 0.5s ease-in-out;
   outline: none;
   cursor: pointer;
-  z-index: 99;
+  z-index: 10;
 
   :hover {
     background-color: #121212;
@@ -123,18 +143,19 @@ const Btn1 = styled.button`
 const Btn2 = styled.button`
   background-color: transparent;
   padding: 0.8rem 1.5rem;
-  border-radius: 5px;
+  border-radius: 3px;
   border: 1.4px solid #6c7075;
   color: #fff;
   font-size: 1.2rem;
   text-transform: uppercase;
+  letter-spacing: 1px;
   font-weight: 400;
   font-family: "Raleway";
   outline: none;
   cursor: pointer;
   outline: none;
   transition: 0.5s ease-in-out;
-  z-index: 99;
+  z-index: 10;
 
   :hover {
     border-color: #fff;
@@ -143,6 +164,45 @@ const Btn2 = styled.button`
   @media (max-width: 800px) {
     padding: 0.5rem 1.5rem;
     font-size: 0.8rem;
+  }
+`;
+
+const Grid = styled.div`
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+`;
+const Box = styled.div`
+  margin-top: 1rem;
+  border: 1.4px solid #6c7075;
+  border-radius: 3px;
+  padding: 0.4rem 1.5rem;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  font-weight: 200;
+  cursor: pointer;
+
+  @media (max-width: 800px) {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    margin-top: 0;
+  }
+`;
+const Box1 = styled.div`
+  margin-top: 1rem;
+  background: transparent;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 200;
+  cursor: pointer;
+
+  @media (max-width: 800px) {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    margin-top: 0;
   }
 `;
 
@@ -170,7 +230,7 @@ const CopyTitle = styled.p`
 `;
 
 const Socials = styled.div`
-margin-left: 2rem;
+  margin-left: 2rem;
   .Icon {
     color: #6c7075;
     font-size: 1.5rem;
