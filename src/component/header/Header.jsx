@@ -1,41 +1,41 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { NavHashLink } from "react-router-hash-link";
 import { HiXMark, HiOutlineBars3 } from "react-icons/hi2";
 
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   return (
-    <MainHeader className="mainHeader">
+    <MainHeader className="mainHeader" id="contact">
       <div className="navContainer">
         <Link to="/" className="navLogo">
           <h4>Setone.dev</h4>
         </Link>
         <ul
           className={isMobile ? "navMobile" : "navLink"}
-          /*onClick={() => setIsMobile(false)}*/
+          onClick={() => setIsMobile(false)}
         >
           <li>
-            <Link to="/" className="link">
+            <NavHashLink to="/" className="link">
               Home
-            </Link>
+            </NavHashLink>
           </li>
-
           <li>
-            <Link to="/about" className="link">
+            <NavHashLink to="/#about" className="link">
               About
-            </Link>
+            </NavHashLink>
           </li>
           <li>
-            <Link to="/project" className="link">
+            <NavHashLink to="/#project" className="link">
               Project
-            </Link>
+            </NavHashLink>
           </li>
           <li>
-            <Link to="/contact" className="link">
+            <NavHashLink to="/#contact" className="link">
               Contact
-            </Link>
+            </NavHashLink>
           </li>
         </ul>
         <div className="mobileToggle" onClick={() => setIsMobile(!isMobile)}>

@@ -15,7 +15,7 @@ const About = () => {
           <div className="Flex1">
             <h1>Get to know me!</h1>
             <p>
-              <span>Hi,</span> Lorem ipsum dolor sit amet consectetur
+              <span>Hi,</span><strong> My name is Femi Athonnagbo</strong> Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Sapiente soluta rerum quos quasi odit provident
               nisi delectus libero, perferendis aliquid asperiores ducimus
               numquam deserunt amet eos repudiandae ex tempore. Ex obcaecati

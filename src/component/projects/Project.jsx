@@ -1,15 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { ContactTitle } from "../contact/Contact";
-// import ProjUI from "./ProjUI";
 import Proj from "../dummyData";
 import { FaRegEye } from "react-icons/fa";
 import { IoIosGitBranch } from "react-icons/io";
 
 const Project = () => {
   return (
-    <Section>
-      <div className="Container">
+    <Section id="project">
+      <div className="Container" >
         <div className="Title">
           <ContactTitle>Project</ContactTitle>
         </div>
