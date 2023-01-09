@@ -14,12 +14,12 @@ const ProjUI = () => {
             <h5>{opt.stack}</h5>
             <p>{opt.desc}</p>
             <div className="ProjBottom">
-              <div>
+              <a href={opt.live} target="_blank">
                 <FaRegEye /> Live
-              </div>
-              <div>
+              </a>
+              <a href={opt.gitlink} target="_blank">
                 <IoIosGitBranch /> Code
-              </div>
+              </a>
             </div>
           </div>
         );

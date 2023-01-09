@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import resume from "../../assets/Fem Athonnagbo.pdf";
 import { BsGithub, BsFacebook, BsLinkedin, BsTwitter } from "react-icons/bs";
-import myresume from "../Asset/Fem Athonnagbo.pdf";
 import { useState } from "react";
 
 const Contact = () => {
   const [isDropdown, setIsDropdown] = useState(false);
 
   return (
-    <Section id="contact">
+    <Section id="contact_me">
       <ContactWrapper>
         <ContactTitle>Contact</ContactTitle>
 
@@ -20,7 +20,7 @@ const Contact = () => {
         </Para>
         <Btn>
           <Btn1 onClick={() => setIsDropdown(!isDropdown)}>Hire Me</Btn1>
-          <Btn2 download href={myresume}>
+          <Btn2 href={resume} title=" " download>
             Resume
           </Btn2>
         </Btn>
@@ -38,10 +38,10 @@ const Contact = () => {
             <CopyTitle> &copy; Copyright Setone 2022</CopyTitle>
           </Copyright>
           <Socials>
-            <BsGithub className="Icon" />
-            <BsFacebook className="Icon" />
-            <BsLinkedin className="Icon" />
-            <BsTwitter className="Icon" />
+            <BsGithub className="Icon" href="" />
+            <BsFacebook className="Icon" href="" />
+            <BsLinkedin className="Icon" href="" />
+            <BsTwitter className="Icon" href="" />
           </Socials>
         </Footer>
       </ContactWrapper>
@@ -114,14 +114,14 @@ const Btn = styled.div`
   align-items: center;
   margin-bottom: 1rem;
 `;
-const Btn1 = styled.button`
+const Btn1 = styled.a`
   background-color: #6c7075;
   padding: 0.9rem 1.8rem;
   border-radius: 3px;
   border: none;
   margin-right: 0.5rem;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 400;
@@ -140,13 +140,13 @@ const Btn1 = styled.button`
     font-size: 0.8rem;
   }
 `;
-const Btn2 = styled.button`
+const Btn2 = styled.a`
   background-color: transparent;
   padding: 0.8rem 1.5rem;
   border-radius: 3px;
   border: 1.4px solid #6c7075;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 400;
@@ -175,12 +175,13 @@ const Grid = styled.div`
   align-items: center;
   flex-flow: column;
 `;
-const Box = styled.div`
+const Box = styled.a`
   margin-top: 1rem;
   border: 1.4px solid #6c7075;
   border-radius: 3px;
-  padding: 0.4rem 1.5rem;
+  padding: 0.4rem 1.3rem;
   letter-spacing: 1px;
+  color: #fff;
   font-size: 1.5rem;
   font-weight: 200;
   cursor: pointer;
@@ -191,7 +192,7 @@ const Box = styled.div`
     margin-top: 0;
   }
 `;
-const Box1 = styled.div`
+const Box1 = styled.a`
   margin-top: 1rem;
   background: transparent;
   font-size: 1.5rem;
@@ -235,6 +236,7 @@ const Socials = styled.div`
     color: #6c7075;
     font-size: 1.5rem;
     margin-right: 2rem;
+    margin-bottom: 1rem;
     transition: 0.3s all ease-in-out;
 
     :hover {

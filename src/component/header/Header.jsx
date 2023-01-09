@@ -1,45 +1,54 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { NavHashLink } from "react-router-hash-link";
-import { HiXMark, HiOutlineBars3 } from "react-icons/hi2";
+// import { NavHashLink } from "react-router-hash-link";
+import { HiXMark, HiOutlineBars2 } from "react-icons/hi2";
 
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
 
+  const navlink = [
+    {
+      id: 1,
+      path: "/",
+      title: "Home",
+    },
+    {
+      id: 2,
+      path: "/#about",
+      title: "About",
+    },
+    {
+      id: 3,
+      path: "/#project",
+      title: "Project",
+    },
+    {
+      id: 4,
+      path: "/#contact_me",
+      title: "Contact",
+    },
+  ];
+
   return (
     <MainHeader className="mainHeader" id="contact">
       <div className="navContainer">
-        <Link to="/" className="navLogo">
+        <a href="/" className="navLogo">
           <h4>Setone.dev</h4>
-        </Link>
+        </a>
         <ul
           className={isMobile ? "navMobile" : "navLink"}
           onClick={() => setIsMobile(false)}
         >
-          <li>
-            <NavHashLink to="/" className="link">
-              Home
-            </NavHashLink>
-          </li>
-          <li>
-            <NavHashLink to="/#about" className="link">
-              About
-            </NavHashLink>
-          </li>
-          <li>
-            <NavHashLink to="/#project" className="link">
-              Project
-            </NavHashLink>
-          </li>
-          <li>
-            <NavHashLink to="/#contact" className="link">
-              Contact
-            </NavHashLink>
-          </li>
+          {navlink.map((item) => (
+            <li key={item.id}>
+              <a href={item.path} className="link">
+                {item.title}
+              </a>
+            </li>
+          ))}
         </ul>
         <div className="mobileToggle" onClick={() => setIsMobile(!isMobile)}>
-          {isMobile ? <HiXMark /> : <HiOutlineBars3 />}
+          {isMobile ? <HiXMark /> : <HiOutlineBars2 />}
         </div>
       </div>
     </MainHeader>
@@ -73,7 +82,7 @@ const MainHeader = styled.div`
   h4 {
     color: rgb(255, 255, 255);
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: "Raleway";
   }
 
@@ -97,6 +106,10 @@ const MainHeader = styled.div`
   @media screen and (max-width: 800px) {
     .navContainer {
       width: 100%;
+    }
+
+    h4{
+      font-size: 1.8rem;
     }
 
     .navLogo {

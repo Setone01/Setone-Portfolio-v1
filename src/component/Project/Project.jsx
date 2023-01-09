@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ContactTitle } from "../contact/Contact";
+import { ContactTitle } from "../Contact/Contact";
 import Proj from "../dummyData";
 import { FaRegEye } from "react-icons/fa";
 import { IoIosGitBranch } from "react-icons/io";
@@ -20,8 +20,8 @@ const Project = () => {
                 <small>{opt.stack}</small>
                 <p>{opt.desc}</p>
                 <div className="ProjBottom">
-                  <LinkSmall ><FaRegEye /> Live</LinkSmall>
-                  <LinkSmall ><IoIosGitBranch /> Code</LinkSmall>
+                  <a href={opt.live} ><FaRegEye /> Live</a>
+                  <a href={opt.gitlink}><IoIosGitBranch /> Code</a>
                 </div>
               </div>
             );
@@ -44,7 +44,7 @@ const Section = styled.div`
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    padding: 3rem 0;
+    padding: 5rem 0;
     z-index: 10;
   }
 
@@ -64,12 +64,12 @@ const Section = styled.div`
 
   h3 {
     font-size: 1.9rem;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: -0.8rem;
   }
 
   p {
-    /* font-size: 1.2rem; */
+    font-size: 1.2rem;
     font-weight: 400;
     margin-bottom: 2.5rem;
     margin-top: 0.5rem;
@@ -85,7 +85,7 @@ const Section = styled.div`
   }
   small {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 700;
 
   }
 
@@ -98,6 +98,19 @@ const Section = styled.div`
     color: blue;
     cursor: pointer;
   }
+  a{
+  margin-right: 2rem;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6c7075;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 10;
+
+  :hover{
+    color: #fff;
+  }
+}
 
   @media (max-width: 800px) {
     .Container {
@@ -121,17 +134,5 @@ const Section = styled.div`
   }
 `;
 
-const LinkSmall = styled.small`
-  margin-right: 2rem;
-  font-weight: 400;
-  color: #6c7075;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-  z-index: 10;
-
-  :hover{
-    color: #fff;
-  }
-`
 
 export default Project;

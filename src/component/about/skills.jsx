@@ -16,22 +16,26 @@ const stacks = [
   },
   {
     id: 4,
-    title: "Tailwind CSS",
-  },
-  {
-    id: 5,
     title: "React",
   },
   {
+    id: 5,
+    title: "Tailwind CSS",
+  },
+  {
     id: 6,
-    title: "GIT",
+    title: "Typescript",
   },
   {
     id: 7,
-    title: " Github",
+    title: "GIT",
   },
   {
     id: 8,
+    title: " Github",
+  },
+  {
+    id: 9,
     title: "Responive Design",
   },
 ];
