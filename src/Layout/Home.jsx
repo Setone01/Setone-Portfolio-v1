@@ -1,5 +1,5 @@
 import React from "react";
-import About from "../component/About/About";
+import About from "../component/about/About";
 import Contact from "../component/Contact/Contact";
 import Header from "../component/Header/Header";
 import Hero from "../component/Hero/Hero";
