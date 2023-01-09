@@ -1,6 +1,6 @@
 import React from "react";
 import About from "../component/about/About";
-import Contact from "../component/Contact/Contact";
+import Contact from "../component/contact/Contact";
 import Header from "../component/Header/Header";
 import Hero from "../component/Hero/Hero";
 import Project from "../component/Project/Project";

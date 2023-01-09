@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ContactTitle } from "../Contact/Contact";
+import { ContactTitle } from "../contact/Contact";
 // import NumberCard from '../UI card/NumberCard'
 import Skill from "./skills";
 

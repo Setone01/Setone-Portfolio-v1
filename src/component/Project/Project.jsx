@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ContactTitle } from "../Contact/Contact";
+import { ContactTitle } from "../contact/Contact";
 import Proj from "../dummyData";
 import { FaRegEye } from "react-icons/fa";
 import { IoIosGitBranch } from "react-icons/io";
