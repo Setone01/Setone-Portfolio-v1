@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { ContactTitle } from "../contact/Contact";
+import { ContactTitle } from "../Contact/Contact";
 // import NumberCard from '../UI card/NumberCard'
 import Skill from "./skills";
 
 const About = () => {
   return (
-    <MainContainer>
+    <MainContainer id="about">
       <div className="contentWrapper">
         <div className="ContentTitle">
           <ContactTitle>About Me</ContactTitle>
