@@ -63,7 +63,7 @@ const Section = styled.div`
   }
 
   h3 {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     font-weight: 500;
     margin-bottom: -0.8rem;
   }
