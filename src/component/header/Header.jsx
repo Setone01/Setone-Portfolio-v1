@@ -6,6 +6,11 @@ import { HiXMark, HiOutlineBars2 } from "react-icons/hi2";
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
 
+  const closeNav = () => {
+    setIsMobile(false)
+  }
+
+
   const navlink = [
     {
       id: 1,
@@ -37,10 +42,9 @@ const Header = () => {
         </a>
         <ul
           className={isMobile ? "navMobile" : "navLink"}
-          onClick={() => setIsMobile(false)}
         >
           {navlink.map((item) => (
-            <li key={item.id}>
+            <li  onClick={closeNav} key={item.id}>
               <a href={item.path} className="link">
                 {item.title}
               </a>
@@ -66,11 +70,16 @@ const MainHeader = styled.div`
   place-items: center;
   z-index: 99;
 
+
   .navContainer {
     width: 80%;
     height: 100%;
+    height: 100%;
+    display: flex;
     display: flex;
     justify-content: space-between;
+    justify-content: space-between;
+    align-items: center;
     align-items: center;
     position: relative;
   }
@@ -127,6 +136,7 @@ const MainHeader = styled.div`
       right: 0;
       top: 100%;
       width: 80%;
+      height: 70vh;
       height: 70vh;
       background-color: black;
       padding-left: 2.4rem;
