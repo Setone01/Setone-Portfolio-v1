@@ -64,7 +64,7 @@ const MainHeader = styled.div`
   height: 6rem;
   top: 0;
   left: 0;
-  background: rgb(0, 0, 0);
+  background: #151515;
   position: fixed;
   display: grid;
   place-items: center;

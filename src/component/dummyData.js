@@ -1,11 +1,11 @@
 const Proj = [
   {
     id: 1,
-    title: "Alnox",
+    title: "ExamHyve",
     stack: "REACT",
-    desc: "Landing Page for hospitality booking",
-    live: "https://setone.netlify.app/",
-    gitlink: "https://github.com/olufemi09/setonhacks",
+    desc: "A web portal to access academic past questions and solutions",
+    live: "https://examhyve.netlify.app/",
+    gitlink: "https://github.com/Setone01/Examhyve",
   },
   {
     id: 2,
