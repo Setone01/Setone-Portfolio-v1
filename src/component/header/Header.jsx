@@ -138,7 +138,7 @@ const MainHeader = styled.div`
       width: 80%;
       height: 70vh;
       height: 70vh;
-      background-color: black;
+      background-color: #151515;
       padding-left: 2.4rem;
       transition: all 0.5s ease-in-out;
     }
