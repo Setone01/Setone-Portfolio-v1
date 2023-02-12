@@ -26,8 +26,12 @@ const Proj = [
   {
     id: 4,
     title: "Portfolio v1",
+
     stack: "REACT JS+ STYLED-COMPONENT",
     desc: "My portfolio website containing projects worked on and other informations about me.",
+    stack: "REACT",
+    desc: "My portfolio website containing mt projects and other information about me",
+
     live: "https://setone.netlify.app/",
     gitlink: "https://github.com/olufemi09/setonhacks",
   },
