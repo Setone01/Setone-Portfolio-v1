@@ -78,7 +78,7 @@ const Section = styled.div`
   .ProjWrapper {
     width: 100%;
     height: max-content;
-    background-color: #121212;
+    background-color: #272626;
     border-radius: 3px;
     padding: 1rem 2rem;
     row-gap: 0.9rem;

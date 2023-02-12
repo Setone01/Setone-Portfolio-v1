@@ -74,6 +74,7 @@ export const ContactTitle = styled.h2`
   font-weight: 400;
   letter-spacing: 5px;
   margin-bottom: 2rem;
+
   @media (max-width: 800px) {
     font-weight: 400;
     font-size: 1.8rem;
