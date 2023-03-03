@@ -7,9 +7,8 @@ const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   const closeNav = () => {
-    setIsMobile(false)
-  }
-
+    setIsMobile(false);
+  };
 
   const navlink = [
     {
@@ -36,15 +35,17 @@ const Header = () => {
 
   return (
     <MainHeader className="mainHeader" id="contact">
-      <div className="navContainer">
+      <div
+        className="navContainer"
+        data-aos="fade-down"
+        data-aos-duration="1800"
+      >
         <a href="/" className="navLogo">
           <h4>Setone.dev</h4>
         </a>
-        <ul
-          className={isMobile ? "navMobile" : "navLink"}
-        >
+        <ul className={isMobile ? "navMobile" : "navLink"}>
           {navlink.map((item) => (
-            <li  onClick={closeNav} key={item.id}>
+            <li onClick={closeNav} key={item.id}>
               <a href={item.path} className="link">
                 {item.title}
               </a>
@@ -64,22 +65,17 @@ const MainHeader = styled.div`
   height: 6rem;
   top: 0;
   left: 0;
-  background: #151515;
+  background: rgb(21,21,21);
   position: fixed;
   display: grid;
   place-items: center;
   z-index: 99;
 
-
   .navContainer {
     width: 80%;
     height: 100%;
-    height: 100%;
-    display: flex;
     display: flex;
     justify-content: space-between;
-    justify-content: space-between;
-    align-items: center;
     align-items: center;
     position: relative;
   }
@@ -115,15 +111,13 @@ const MainHeader = styled.div`
   @media screen and (max-width: 800px) {
     .navContainer {
       width: 100%;
+      padding: 0 20px;
     }
 
-    h4{
+    h4 {
       font-size: 1.8rem;
     }
 
-    .navLogo {
-      margin-left: 5%;
-    }
     .navLink {
       display: none;
     }
@@ -137,8 +131,7 @@ const MainHeader = styled.div`
       top: 100%;
       width: 80%;
       height: 70vh;
-      height: 70vh;
-      background-color: #151515;
+      background: rgb(21,21,21);
       padding-left: 2.4rem;
       transition: all 0.5s ease-in-out;
     }
@@ -152,18 +145,8 @@ const MainHeader = styled.div`
       margin-bottom: 2.3rem;
     }
 
-    .HeaderButton {
-      font-size: 1.3rem;
-      padding: 7px 8px;
-    }
-    .HeaderIcon {
-      font-size: 1.24rem;
-      margin-bottom: -2px;
-    }
-
     .mobileToggle {
       display: block;
-      margin-right: 5%;
       svg {
         font-size: 35px;
         color: #fff;

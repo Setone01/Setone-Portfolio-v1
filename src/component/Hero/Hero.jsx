@@ -5,7 +5,11 @@ import styled from "styled-components";
 const Hero = () => {
   return (
     <MainSection>
-      <div className="contentWrapper">
+      <div
+        className="contentWrapper"
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+      >
         <div className="contentTop">
           <h3>I am a</h3>
           <h2>Frontend developer</h2>
@@ -59,10 +63,10 @@ const MainSection = styled.div`
   }
 
   p {
-    font-size: 1.8rem;
-    font-weight: 200;
+    font-size: 1.9rem;
+    font-weight: 300;
     font-family: "Raleway";
-    color: #f5f5e9;
+    color: #c7caca;
     line-height: 1.8em;
     margin-bottom: 3rem;
     width: 70rem;
@@ -87,11 +91,11 @@ const MainSection = styled.div`
 
   @media (max-width: 800px) {
     height: 70vh;
-    .contentWrapper{
+    .contentWrapper {
       width: 90%;
       /* margin-top: 2rem; */
     }
-    h3{
+    h3 {
       font-size: 1.8rem;
       font-weight: 300;
     }
