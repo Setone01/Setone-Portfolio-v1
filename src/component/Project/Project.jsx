@@ -1,31 +1,40 @@
 import React from "react";
 import styled from "styled-components";
 import { ContactTitle } from "../contact/Contact";
-import Proj from "../dummyData";
+import { Proj } from "../dummyData"
 import { FaRegEye } from "react-icons/fa";
 import { IoIosGitBranch } from "react-icons/io";
 
 const Project = () => {
   return (
     <Section id="project">
-      <div className="Container" >
+      <div className="Container">
         <div className="Title">
-          <ContactTitle>Project</ContactTitle>
+          <ContactTitle data-aos="fade-down" data-aos-duration="1300">
+            Project
+          </ContactTitle>
         </div>
         <div className="ProjCont">
-          {Proj.map((opt) => {
-            return (
-              <div key={opt.id} className="ProjWrapper">
-                <h3>{opt.title}</h3>
-                <small>{opt.stack}</small>
-                <p>{opt.desc}</p>
-                <div className="ProjBottom">
-                  <a href={opt.live} ><FaRegEye /> Live</a>
-                  <a href={opt.gitlink}><IoIosGitBranch /> Code</a>
-                </div>
+          {Proj.map((data, index) => (
+            <div
+              key={index}
+              className="ProjWrapper"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <h3>{data.title}</h3>
+              <h6>{data.stack}</h6>
+              <p>{data.desc}</p>
+              <div className="ProjBottom">
+                <a href={data.live}>
+                  <FaRegEye /> Live
+                </a>
+                <a href={data.gitlink}>
+                  <IoIosGitBranch /> Code
+                </a>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
       </div>
     </Section>
@@ -34,11 +43,11 @@ const Project = () => {
 
 const Section = styled.div`
   width: 100%;
-  height: max-content;
+  height: 80vh;
+  margin-bottom: 0 0 0 6rem;
 
   .Container {
     width: 80%;
-    height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -59,80 +68,85 @@ const Section = styled.div`
     align-items: center;
     row-gap: 1.7rem;
     column-gap: 1.9rem;
-    margin-bottom: 3rem;
   }
 
   h3 {
     font-size: 1.9rem;
     font-weight: 500;
     margin-bottom: -0.8rem;
+    color: #FFFFFF;
   }
 
   p {
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 600;
+    line-height: 1.6em;
     margin-bottom: 2.5rem;
     margin-top: 0.5rem;
+    color: #6c7075;
   }
 
   .ProjWrapper {
     width: 100%;
-    height: max-content;
+    min-height: 150px;
     background-color: #272626;
     border-radius: 3px;
     padding: 1rem 2rem;
     row-gap: 0.9rem;
+    align-items: normal;
   }
-  small {
+  h6 {
     font-size: 1rem;
     font-weight: 700;
-
+    margin-top: 10px;
+    color: #c7caca;
   }
 
   .ProjBottom {
     display: flex;
     align-items: flex-start;
   }
-  .ProjIcon {
-    margin-right: 1rem;
-    color: blue;
-    cursor: pointer;
-  }
-  a{
-  margin-right: 2rem;
-  font-size: 12px;
-  font-weight: 600;
-  color: #6c7075;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-  z-index: 10;
 
-  :hover{
-    color: #fff;
+  a {
+    margin-right: 2rem;
+    font-size: 11px;
+    font-weight: 500;
+    color: #9b9d9f;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 10;
+
+    :hover {
+      color: #fff;
+    }
   }
-}
 
   @media (max-width: 800px) {
+    height: max-content;
     .Container {
-      height: max-content;
       margin-top: 5rem;
     }
 
-    small{
-      font-size: 0.9rem;
+    h6 {
+      font-size: 0.8rem;
       font-weight: 600;
     }
 
-    p{
-      font-size: 1rem;
-      font-weight: 300;
+    p {
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 1.7em;
     }
 
     .ProjCont {
       grid: unset;
     }
+
+    .ProjWrapper {
+      align-self: normal;
+      height: max-content;
+    }
   }
 `;
-
 
 export default Project;

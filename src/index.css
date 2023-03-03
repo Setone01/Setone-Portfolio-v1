@@ -15,7 +15,7 @@ body {
   scroll-behavior: smooth;
   line-height: 1.6;
   font-family: Raleway, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #151515;
+  background: rgb(21,21,21);
   color: rgb(255, 255, 255);
   font-size: 1.6rem;
   overflow-x: hidden;

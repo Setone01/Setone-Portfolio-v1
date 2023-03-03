@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import resume from "../../assets/Fem Athonnagbo.pdf";
-import { BsGithub, BsFacebook, BsLinkedin, BsTwitter } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
+import { FaEnvelope} from "react-icons/fa"
 import { useState } from "react";
 
 const Contact = () => {
@@ -10,15 +11,19 @@ const Contact = () => {
   return (
     <Section id="contact_me">
       <ContactWrapper>
-        <ContactTitle>Contact</ContactTitle>
+        <ContactTitle data-aos="fade-down" data-aos-duration="1300">
+          Contact
+        </ContactTitle>
 
-        <Title>Get in Touch</Title>
-        <Para>
+        <Title data-aos="fade-up" data-aos-duration="2000">
+          Get in Touch
+        </Title>
+        <Para data-aos="fade-up" data-aos-duration="2500">
           I am currently looking for job opportunities. Very much available if
           you want to hire me or ask me any questions concerning any of my
           projects or collaborations.
         </Para>
-        <Btn>
+        <Btn data-aos="fade-up" data-aos-duration="3000">
           <Btn1 onClick={() => setIsDropdown(!isDropdown)}>Hire Me</Btn1>
           <Btn2 href={resume} title=" " download>
             Resume
@@ -35,13 +40,16 @@ const Contact = () => {
 
         <Footer>
           <Copyright>
-            <CopyTitle> &copy; Copyright Setone 2022</CopyTitle>
+            <CopyTitle>
+              {" "}
+              &copy; Copyright Setone 2022
+            </CopyTitle>
           </Copyright>
           <Socials>
-            <BsGithub className="Icon" href="" />
-            <BsFacebook className="Icon" href="" />
-            <BsLinkedin className="Icon" href="" />
-            <BsTwitter className="Icon" href="" />
+            <BsGithub className="Icon" href="https://github.com/Setone01" />
+            <FaEnvelope className="Icon" href="mailto:femicymon@gmail.com" />
+            <BsLinkedin className="Icon" href="https://www.linkedin.com/in/cymon" />
+            <BsTwitter className="Icon" href="https://twitter.com/cymonofficial" />
           </Socials>
         </Footer>
       </ContactWrapper>
@@ -51,7 +59,7 @@ const Contact = () => {
 
 const Section = styled.div`
   width: 100%;
-  height: 98vh;
+  height: 96vh;
 `;
 const ContactWrapper = styled.div`
   display: flex;
@@ -74,6 +82,7 @@ export const ContactTitle = styled.h2`
   font-weight: 400;
   letter-spacing: 5px;
   margin-bottom: 2rem;
+  color: #c0c0c0;
 
   @media (max-width: 800px) {
     font-weight: 400;
@@ -97,6 +106,7 @@ const Title = styled.h1`
 
 const Para = styled.p`
   width: 40%;
+  color: #c7caca;
   /* font-size: 1.8rem; */
   text-align: center;
   line-height: 1.8em;
@@ -105,7 +115,7 @@ const Para = styled.p`
   @media (max-width: 800px) {
     font-weight: 400;
     font-size: 1.1rem;
-    font-weight: 300;
+    /* font-weight: 300; */
     line-height: 1.7em;
     width: 100%;
   }
@@ -121,7 +131,7 @@ const Btn1 = styled.a`
   border-radius: 3px;
   border: none;
   margin-right: 0.5rem;
-  color: #fff;
+  color: #c7caca;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
