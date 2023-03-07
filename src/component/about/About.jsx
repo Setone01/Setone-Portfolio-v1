@@ -14,7 +14,7 @@ const About = () => {
           </ContactTitle>
         </div>
         <div className="MainContent">
-          <div className="Flex1" data-aos="fade-right" data-aos-duration="2000">
+          <div className="Flex1" data-aos="fade-up" data-aos-duration="2000">
             <h1>Get to know me!</h1>
             <p>
               Hi, My name is <span>Femi Athonnagbo</span> Lorem ipsum dolor sit
@@ -30,7 +30,7 @@ const About = () => {
             </p>
           </div>
           <div className="Skill">
-            <div className="SkillContainer" data-aos="fade-left" data-aos-duration="2000">
+            <div className="SkillContainer" data-aos="fade-up" data-aos-duration="2000">
               <h1>My Skills</h1>
               <div className="SkillContent">
                 {Stacks.map((opt, index) => (
