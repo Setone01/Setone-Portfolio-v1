@@ -206,7 +206,7 @@ const Box = styled.a`
   letter-spacing: 1px;
   color: #fff;
   font-family: "Manrope"
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 200;
   cursor: pointer;
 
@@ -220,7 +220,7 @@ const Box1 = styled.a`
   margin-top: 1rem;
   background: transparent;
   font-family: "Manrope"
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   letter-spacing: 1px;
   font-weight: 200;
   cursor: pointer;
