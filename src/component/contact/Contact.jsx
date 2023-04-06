@@ -2,11 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import resume from "../../assets/Fem Athonnagbo.pdf";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
-import { FaEnvelope} from "react-icons/fa"
+import { FaEnvelope } from "react-icons/fa";
 import { useState } from "react";
 
 const Contact = () => {
   const [isDropdown, setIsDropdown] = useState(false);
+
+  const handleClick = () => {
+    setIsDropdown(!isDropdown);
+  };
 
   return (
     <Section id="contact_me">
@@ -24,7 +28,7 @@ const Contact = () => {
           projects or collaborations.
         </Para>
         <Btn data-aos="fade-up" data-aos-duration="3000">
-          <Btn1 onClick={() => setIsDropdown(!isDropdown)}>Hire Me</Btn1>
+          <Btn1 onClick={handleClick}>Hire Me</Btn1>
           <Btn2 href={resume} title=" " download>
             Resume
           </Btn2>
@@ -40,16 +44,21 @@ const Contact = () => {
 
         <Footer>
           <Copyright>
-            <CopyTitle>
-              {" "}
-              &copy; Copyright Setone 2022
-            </CopyTitle>
+            <CopyTitle> &copy; Copyright Setone 2022</CopyTitle>
           </Copyright>
           <Socials>
-            <BsGithub className="Icon" href="https://github.com/Setone01" />
-            <FaEnvelope className="Icon" href="mailto:femicymon@gmail.com" />
-            <BsLinkedin className="Icon" href="https://www.linkedin.com/in/cymon" />
-            <BsTwitter className="Icon" href="https://twitter.com/cymonofficial" />
+            <a href="https://github.com/Setone01">
+              <BsGithub className="Icon" />
+            </a>
+            <a href="mailto:femicymon@gmail.com">
+              <FaEnvelope className="Icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/cymon">
+              <BsLinkedin className="Icon" />
+            </a>
+            <a href="https://twitter.com/cymonofficial">
+              <BsTwitter className="Icon" />
+            </a>
           </Socials>
         </Footer>
       </ContactWrapper>
@@ -94,6 +103,7 @@ export const ContactTitle = styled.h2`
 
 const Title = styled.h1`
   font-size: 5rem;
+  font-family: "Raleway";
   margin-bottom: 1.5rem;
   font-weight: 900;
   color: #6c7075;
@@ -107,6 +117,7 @@ const Title = styled.h1`
 const Para = styled.p`
   width: 40%;
   color: #c7caca;
+  font-family: "Manrope";
   /* font-size: 1.8rem; */
   text-align: center;
   line-height: 1.8em;
@@ -132,6 +143,7 @@ const Btn1 = styled.a`
   border: none;
   margin-right: 0.5rem;
   color: #c7caca;
+  border: none;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -143,7 +155,7 @@ const Btn1 = styled.a`
   z-index: 10;
 
   :hover {
-    background-color: #121212;
+    background-color: #414141;
   }
 
   @media (max-width: 800px) {
@@ -235,6 +247,7 @@ const Copyright = styled.div`
 `;
 const CopyTitle = styled.p`
   text-align: center;
+  font-family: "Raleway";
   @media (max-width: 800px) {
     font-size: 1.1rem;
     font-weight: 300;
@@ -249,6 +262,7 @@ const Socials = styled.div`
     margin-right: 2rem;
     margin-bottom: 1rem;
     transition: 0.3s all ease-in-out;
+    cursor: pointer;
 
     :hover {
       color: #fff;
@@ -260,4 +274,8 @@ const Socials = styled.div`
   }
 `;
 
+// const Button = styled.button`
+//   background-color: transparent;
+//   border: none;
+// `;
 export default Contact;
