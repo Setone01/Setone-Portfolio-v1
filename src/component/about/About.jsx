@@ -14,11 +14,11 @@ const About = () => {
           </ContactTitle>
         </div>
         <div className="MainContent">
-          <div className="Flex1" data-aos="fade-right" data-aos-duration="2000">
-            <h1>Get to know me!</h1>
+          <div className="Flex1" data-aos="fade-up" data-aos-duration="2000">
+            <h2>Get to know me!</h2>
             <p>
-              Hi, My name is <span>Femi Athonnagbo</span> Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Sapiente soluta rerum quos
+              Hello! My name is <span>Femi Athonnagbo</span> Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Sapiente soluta rerum quos
               quasi odit provident nisi delectus libero, perferendis aliquid
               asperiores ducimus numquam deserunt amet eos repudiandae ex
               tempore. Ex obcaecati repellendus iste dolorem aliquid similique
@@ -30,8 +30,12 @@ const About = () => {
             </p>
           </div>
           <div className="Skill">
-            <div className="SkillContainer" data-aos="fade-left" data-aos-duration="2000">
-              <h1>My Skills</h1>
+            <div
+              className="SkillContainer"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <h2>My Skills</h2>
               <div className="SkillContent">
                 {Stacks.map((opt, index) => (
                   <div className="Skill_set" key={index}>
@@ -84,13 +88,15 @@ const MainContainer = styled.div`
 
   .Flex1 p {
     color: #c7caca;
+    font-family: "Manrope";
     max-width: 60rem;
     font-weight: 400;
     margin-bottom: 1.5rem;
     line-height: 1.8em;
   }
 
-  .Flex1 h1 {
+  .Flex1 h2 {
+    font-family: "Raleway";
     font-size: 2.1rem;
     font-weight: 900;
     margin-bottom: 2rem;
@@ -98,8 +104,8 @@ const MainContainer = styled.div`
   }
   .Flex1 span {
     color: #6c7075;
-    text-decoration: underline;
-    font-weight: 800;
+    /* text-decoration: underline; */
+    font-weight: 900;
     /* font-size: 2rem; */
     /* font-weight: 500; */
   }
@@ -133,9 +139,10 @@ const MainContainer = styled.div`
     z-index: 10;
   }
 
-  .SkillContainer h1 {
+  .SkillContainer h2 {
     font-size: 2.1rem;
-    font-weight: 600;
+    font-family: "Raleway";
+    font-weight: 900;
     margin-bottom: 2rem;
     color: #6c7075;
   }

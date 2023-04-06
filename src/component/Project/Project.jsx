@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { ContactTitle } from "../contact/Contact";
-import { Proj } from "../dummyData"
+import { Proj } from "../dummyData";
 import { FaRegEye } from "react-icons/fa";
 import { IoIosGitBranch } from "react-icons/io";
 
@@ -72,9 +72,10 @@ const Section = styled.div`
 
   h3 {
     font-size: 1.8rem;
+    font-family: "Raleway";
     font-weight: 500;
     margin-bottom: -0.8rem;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   p {
@@ -98,6 +99,7 @@ const Section = styled.div`
   h6 {
     font-size: 1rem;
     font-weight: 700;
+    letter-spacing: 0.1rem;
     margin-top: 10px;
     color: #c7caca;
   }
