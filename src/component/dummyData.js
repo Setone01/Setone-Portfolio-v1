@@ -23,11 +23,7 @@ export const Proj = [
   {
     title: "Portfolio v1",
     stack: "REACT JS + STYLED-COMPONENT",
-<<<<<<< HEAD
-    desc: "My portfolio website containing mt projects and other information about me",
-=======
     desc: "My portfolio website containing projects worked on and other informations about me.",
->>>>>>> 96abf9b8e6666617398e3ded2bc00ea50a065e24
     live: "https://setone.netlify.app/",
     gitlink: "https://github.com/olufemi09/setonhacks",
   },
@@ -55,7 +51,6 @@ export const Stacks = [
   {
     title: "GIT",
   },
-
   {
     title: "Responive Design",
   },
