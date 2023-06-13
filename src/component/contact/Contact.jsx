@@ -208,6 +208,10 @@ const Box = styled.a`
   color: #fff;
   font-size: 1rem;
   /* font-weight: 200; */
+  font-family: "Manrope"
+  font-size: 1.4rem;
+  font-weight: 200;
+
   cursor: pointer;
 
   @media (max-width: 800px) {
@@ -221,6 +225,8 @@ const Box1 = styled.a`
   background: transparent;
   font-size: 1rem;
   font-family: "Manrope";
+  font-family: "Manrope"
+  font-size: 1.4rem;
   letter-spacing: 1px;
   /* font-weight: 200; */
   cursor: pointer;
