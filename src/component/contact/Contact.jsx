@@ -48,13 +48,13 @@ const Contact = () => {
           </Copyright>
           <Socials>
             <a href="https://github.com/Setone01">
-              <BsGithub/>
+              <BsGithub />
             </a>
             <a href="mailto:femicymon@gmail.com">
-              <FaEnvelope/>
+              <FaEnvelope />
             </a>
             <a href="https://www.linkedin.com/in/cymon">
-              <BsLinkedin/>
+              <BsLinkedin />
             </a>
             <a href="https://twitter.com/cymonofficial">
               <BsTwitter />
@@ -208,7 +208,7 @@ const Box = styled.a`
   color: #fff;
   font-size: 1rem;
   /* font-weight: 200; */
-  font-family: "Manrope"
+  font-family: "Manrope";
   font-size: 1.4rem;
   font-weight: 200;
 
@@ -217,7 +217,7 @@ const Box = styled.a`
   @media (max-width: 800px) {
     padding: 0.5rem 1.5rem;
     font-size: 1rem;
-    margin-top: 0;
+    margin-top: 0px;
   }
 `;
 const Box1 = styled.a`
@@ -225,7 +225,7 @@ const Box1 = styled.a`
   background: transparent;
   font-size: 1rem;
   font-family: "Manrope";
-  font-family: "Manrope"
+  font-family: "Manrope";
   font-size: 1.4rem;
   letter-spacing: 1px;
   /* font-weight: 200; */
@@ -265,9 +265,9 @@ const CopyTitle = styled.p`
 const Socials = styled.div`
   margin-left: 2rem;
 
- a{
-  outline: none;
- } 
+  a {
+    outline: none;
+  }
   svg {
     color: #6c7075;
     font-size: 1.5rem;

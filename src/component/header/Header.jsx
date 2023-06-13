@@ -73,12 +73,6 @@ const Header = () => {
               <BsTwitter />
             </a>
           </Socials>
-            {/* <div className="mediaLink">
-              <BsGithub href="https://github.com/Setone01"/>
-              <BsLinkedin href="mailto:femicymon@gmail.com"/>
-              <FaEnvelope href="https://www.linkedin.com/in/cymon"/>
-              <BsTwitter href="https://twitter.com/cymonofficial"/>
-            </div> */}
           </div>
         </ul>
         <div className="mobileToggle" onClick={() => setIsMobile(!isMobile)}>
