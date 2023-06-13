@@ -29,9 +29,10 @@ const Project = () => {
                 <a href={data.live}>
                   <FaRegEye /> Live
                 </a>
-                <a href={data.gitlink}>
+                {data.gitlink ? <a href={data.gitlink}>
                   <IoIosGitBranch /> Code
-                </a>
+                </a> : " "}
+                
               </div>
             </div>
           ))}

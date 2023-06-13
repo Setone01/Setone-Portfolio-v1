@@ -59,12 +59,26 @@ const Header = () => {
               <h2>Have an idea?</h2>
               <p>Reach out to me</p>
             </div>
-            <div className="mediaLink">
+            <Socials>
+            <a href="https://github.com/Setone01">
+              <BsGithub/>
+            </a>
+            <a href="mailto:femicymon@gmail.com">
+              <FaEnvelope/>
+            </a>
+            <a href="https://www.linkedin.com/in/cymon">
+              <BsLinkedin/>
+            </a>
+            <a href="https://twitter.com/cymonofficial">
+              <BsTwitter />
+            </a>
+          </Socials>
+            {/* <div className="mediaLink">
               <BsGithub href="https://github.com/Setone01"/>
               <BsLinkedin href="mailto:femicymon@gmail.com"/>
               <FaEnvelope href="https://www.linkedin.com/in/cymon"/>
               <BsTwitter href="https://twitter.com/cymonofficial"/>
-            </div>
+            </div> */}
           </div>
         </ul>
         <div className="mobileToggle" onClick={() => setIsMobile(!isMobile)}>
@@ -152,6 +166,8 @@ const MainHeader = styled.div`
       width: 100%;
       height: 100vh;
       background: #272626;
+      backdrop-filter: blur(8px);
+      /* -webkit-filter: blur(8px); */
       padding-top: 2rem;
       /* padding-left: 2.4rem; */
       transition: all 0.5s ease-in-out;
@@ -160,7 +176,7 @@ const MainHeader = styled.div`
       align-items: center;
       color: #fff;
       font-family: "Manrope";
-      font-size: 2rem;
+      font-size: 1.5rem;
       /* font-weight: 500; */
       transform: translate(50%, -50%);
     }
@@ -182,11 +198,11 @@ const MainHeader = styled.div`
     }
 
     .SocialTip h2{
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: 900;
     }
     .SocialTip p{
-      font-size: 2rem;
+      font-size: 1.6rem;
       font-weight: 400;
     }
 
@@ -221,6 +237,30 @@ const MainHeader = styled.div`
         cursor: pointer;
       }
     }
+  }
+`;
+
+const Socials = styled.div`
+  margin-left: 2rem;
+
+ a{
+  outline: none;
+ } 
+  svg {
+    color: #6c7075;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+
+    :hover {
+      color: #fff;
+    }
+  }
+
+  @media (max-width: 800px) {
+    margin-bottom: 0;
   }
 `;
 
