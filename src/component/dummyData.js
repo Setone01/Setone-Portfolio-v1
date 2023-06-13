@@ -1,24 +1,25 @@
 export const Proj = [
   {
+    title: "Oriki Yoruba",
+    stack: "REACT JS + TAILWIND CSS",
+    desc: "Oriki is a Yoruba language based app, used in streaming regional Eulogy across Yoruba empire.",
+    live: "https://orikiyoruba.netlify.app/",
+    gitlink: "",
+  },
+  {
     title: "ExamHyve",
     stack: "REACT JS + TAILWIND CSS",
     desc: "Academic past question app used in tutoring and self evaluation for teenagers",
     live: "https://examhyve.netlify.app/",
     gitlink: "https://github.com/Setone01/Examhyve",
   },
+
   {
-    title: "Jobwing",
-    stack: "REACT JS",
-    desc: "A job portal landing page designed for hiring developers.",
-    live: "https://setone.netlify.app/",
-    gitlink: "https://github.com/olufemi09/setonhacks",
-  },
-  {
-    title: "Simron",
+    title: "Africash",
     stack: "REACT JS + TAILWIND CSS",
-    desc: "A booking app landing page.",
-    live: "https://setone.netlify.app/",
-    gitlink: "https://github.com/olufemi09/setonhacks",
+    desc: "Africash is a digital ecosystem designed to make Africa fintech one. Coming soon, not responsive",
+    live: "https://africashh.netlify.app/",
+    gitlink: " ",
   },
   {
     title: "Portfolio v1",
@@ -51,7 +52,6 @@ export const Stacks = [
   {
     title: "GIT",
   },
-
   {
     title: "Responive Design",
   },
