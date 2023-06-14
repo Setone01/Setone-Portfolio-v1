@@ -110,9 +110,9 @@ const MainHeader = styled.div`
 
   h4 {
     color: rgb(255, 255, 255);
-    font-weight: 500;
+    font-weight: 800;
     font-size: 2rem;
-    font-family: "Raleway";
+    font-family: "Euclid Circular B";
   }
 
   .navLink {
@@ -123,9 +123,9 @@ const MainHeader = styled.div`
 
   .link {
     color: #fff;
-    font-weight: 500;
+    font-weight: 200;
     font-size: 1.5rem;
-    font-family: "Raleway";
+    font-family: "Euclid Circular B";
   }
 
   .Socials{
@@ -159,7 +159,7 @@ const MainHeader = styled.div`
       top: 100%;
       width: 100%;
       height: 100vh;
-      background: #272626;
+      background: rgb(21,21,21);
       backdrop-filter: blur(8px);
       /* -webkit-filter: blur(8px); */
       padding-top: 2rem;
@@ -169,7 +169,7 @@ const MainHeader = styled.div`
     .link {
       align-items: center;
       color: #fff;
-      font-family: "Manrope";
+      font-family: "Euclid Circular B";
       font-size: 1.5rem;
       /* font-weight: 500; */
       transform: translate(50%, -50%);
@@ -188,16 +188,16 @@ const MainHeader = styled.div`
       width: 80%;
       margin: 0 auto;
       padding: 0 2rem;
-      border-top: 1.5px solid #FFFFFF;
+      border-top: 1px solid #6c7075;
     }
 
     .SocialTip h2{
       font-size: 2rem;
-      font-weight: 900;
+      font-weight: 500;
     }
     .SocialTip p{
-      font-size: 1.6rem;
-      font-weight: 400;
+      font-size: 1.3rem;
+      font-weight: 200;
     }
 
     .SocialTip {

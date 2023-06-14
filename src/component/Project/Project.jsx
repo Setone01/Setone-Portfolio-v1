@@ -73,7 +73,7 @@ const Section = styled.div`
 
   h3 {
     font-size: 1.8rem;
-    font-family: "Raleway";
+    font-family: "Euclid Circular B";
     font-weight: 500;
     margin-bottom: -0.8rem;
     color: #ffffff;
@@ -81,7 +81,7 @@ const Section = styled.div`
 
   p {
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.6em;
     margin-bottom: 2.5rem;
     margin-top: 0.5rem;
@@ -113,7 +113,7 @@ const Section = styled.div`
   a {
     margin-right: 2rem;
     font-size: 11px;
-    font-weight: 500;
+    font-weight: 200;
     color: #9b9d9f;
     transition: 0.3s ease-in-out;
     cursor: pointer;
@@ -137,7 +137,7 @@ const Section = styled.div`
 
     p {
       font-size: 1.1rem;
-      font-weight: 400;
+      font-weight: 100;
       line-height: 1.7em;
     }
 

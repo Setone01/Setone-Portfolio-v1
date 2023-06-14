@@ -103,7 +103,7 @@ export const ContactTitle = styled.h2`
 
 const Title = styled.h1`
   font-size: 5rem;
-  font-family: "Raleway";
+  font-family: "Euclid Circular B";
   margin-bottom: 1.5rem;
   font-weight: 900;
   color: #6c7075;
@@ -117,16 +117,16 @@ const Title = styled.h1`
 const Para = styled.p`
   width: 40%;
   color: #c7caca;
-  font-family: "Manrope";
+  font-family: "Euclid Circular B";
+  font-weight: 100;
   /* font-size: 1.8rem; */
   text-align: center;
   line-height: 1.8em;
   margin-bottom: 1.4rem;
 
   @media (max-width: 800px) {
-    font-weight: 400;
+    font-weight: 100;
     font-size: 1.1rem;
-    /* font-weight: 300; */
     line-height: 1.7em;
     width: 100%;
   }
@@ -147,8 +147,8 @@ const Btn1 = styled.a`
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 400;
-  font-family: "Raleway";
+  font-weight: 300;
+  font-family: "Euclid Circular B";
   transition: 0.5s ease-in-out;
   outline: none;
   cursor: pointer;
@@ -172,8 +172,8 @@ const Btn2 = styled.a`
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 400;
-  font-family: "Raleway";
+  font-weight: 300;
+  font-family: "Euclid Circular B";
   outline: none;
   cursor: pointer;
   outline: none;
@@ -204,12 +204,11 @@ const Box = styled.a`
   border-radius: 3px;
   padding: 0.4rem 1.3rem;
   letter-spacing: 1px;
-  font-family: "Manrope";
+  font-family: "Euclid Circular B";
   color: #fff;
   font-size: 1rem;
-  /* font-weight: 200; */
-  font-family: "Manrope";
-  font-size: 1.4rem;
+  font-weight: 100;
+  font-family: "Euclid Circular B";
   font-weight: 200;
 
   cursor: pointer;
@@ -224,11 +223,10 @@ const Box1 = styled.a`
   margin-top: 1rem;
   background: transparent;
   font-size: 1rem;
-  font-family: "Manrope";
-  font-family: "Manrope";
-  font-size: 1.4rem;
+  font-family: "Euclid Circular B";
+  /* font-size: 1.4rem; */
   letter-spacing: 1px;
-  /* font-weight: 200; */
+  font-weight: 50;
   cursor: pointer;
 
   @media (max-width: 800px) {
@@ -255,7 +253,7 @@ const Copyright = styled.div`
 `;
 const CopyTitle = styled.p`
   text-align: center;
-  font-family: "Raleway";
+  font-family: "Euclid Circular B";
   @media (max-width: 800px) {
     font-size: 1.1rem;
     font-weight: 300;

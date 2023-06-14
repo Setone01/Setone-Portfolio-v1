@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
 
 html{
     font-size: 62.5%;
@@ -11,7 +11,7 @@ html{
 body {
   scroll-behavior: smooth;
   line-height: 1.6;
-  font-family: Raleway, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Euclid Circular B", sans-serif;
   background: rgb(21,21,21);
   color: rgb(255, 255, 255);
   font-size: 1.6rem;
