@@ -47,14 +47,14 @@ const MainSection = styled.div`
   }
   h3 {
     font-size: 2.8rem;
-    font-weight: 200;
-    font-family: "Raleway";
+    font-weight: 100;
+    font-family: "Euclid Circular B";
   }
 
   h2 {
     font-size: 8rem;
     font-weight: 800;
-    font-family: "Raleway";
+    font-family: "Euclid Circular B";
     line-height: 1.2em;
   }
 
@@ -64,8 +64,8 @@ const MainSection = styled.div`
 
   p {
     font-size: 1.9rem;
-    font-weight: 300;
-    font-family: "Raleway";
+    font-weight: 100;
+    font-family: "Euclid Circular B";
     color: #c7caca;
     line-height: 1.8em;
     margin-bottom: 3rem;

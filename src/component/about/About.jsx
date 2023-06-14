@@ -39,7 +39,7 @@ const About = () => {
               <div className="SkillContent">
                 {Stacks.map((opt, index) => (
                   <div className="Skill_set" key={index}>
-                    {opt.title}
+                    <h6>{opt.title}</h6>
                   </div>
                 ))}
               </div>
@@ -88,17 +88,18 @@ const MainContainer = styled.div`
 
   .Flex1 p {
     color: #c7caca;
-    font-family: "Manrope";
+    font-family: "Euclid Circular B";
+    font-size: 1.4rem;
     max-width: 60rem;
-    font-weight: 400;
+    font-weight: 100;
     margin-bottom: 1.5rem;
-    line-height: 1.8em;
+    /* line-height: 1.8em; */
   }
 
   .Flex1 h2 {
-    font-family: "Raleway";
+    font-family: "Euclid Circular B";
     font-size: 2.1rem;
-    font-weight: 900;
+    font-weight: 600;
     margin-bottom: 2rem;
     color: #6c7075;
   }
@@ -127,21 +128,24 @@ const MainContainer = styled.div`
     align-items: center;
   }
 
-  .Skill_set {
+  .Skill_set  {
     padding: 0.4rem 1.5rem;
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
     font-size: 1.1rem;
     background: rgba(153, 153, 153, 0.2);
     border-radius: 5px;
-    font-weight: 600;
     color: #6c7075;
     z-index: 10;
+  }
+  .Skill_set h6 {
+    font-size: 1rem;
+    font-weight: 300;
   }
 
   .SkillContainer h2 {
     font-size: 2.1rem;
-    font-family: "Raleway";
+    font-family: "Euclid Circular B";
     font-weight: 900;
     margin-bottom: 2rem;
     color: #6c7075;
@@ -162,7 +166,7 @@ const MainContainer = styled.div`
 
     .Flex1 p {
       font-size: 1.1rem;
-      font-weight: 400;
+      font-weight: 100;
     }
     .MainContent {
       display: flex;
@@ -171,7 +175,7 @@ const MainContainer = styled.div`
 
       p {
         font-size: 1.1rem;
-        font-weight: 400;
+        font-weight: 100;
         line-height: 1.7em;
       }
       /* span {
@@ -186,7 +190,7 @@ const MainContainer = styled.div`
 
       h1 {
         font-size: 1.8rem;
-        font-weight: 900;
+        font-weight: 500;
       }
     }
     .Skill_set {
