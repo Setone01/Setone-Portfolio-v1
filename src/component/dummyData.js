@@ -1,10 +1,17 @@
 export const Proj = [
   {
-    title: "Oriki Yoruba",
+    title: "Homly",
     stack: "REACT JS + TAILWIND CSS",
-    desc: "Oriki is a Yoruba language based app, used in streaming regional Eulogy across Yoruba empire.",
-    live: "https://orikiyoruba.netlify.app/",
-    gitlink: "",
+    desc: "Homly is an innovative application platform that allows you manage your homes, offices and estates' essentials just from the tip of your finger without having to go through the hassles of getting homes, offices and estates' essential service delivery.",
+    live: "https://homlydemo.netlify.app/",
+    gitlink: " ",
+  },
+  {
+    title: "Hotels Fashion",
+    stack: "REACT JS + TAILWIND CSS",
+    desc: "Hotels Fashion is an hospitality booking app, wish help tourist settles down in different locations across UK ",
+    live: "https://hotelsfashion.netlify.app/",
+    gitlink: " ",
   },
   {
     title: "ExamHyve",
@@ -13,20 +20,12 @@ export const Proj = [
     live: "https://examhyve.netlify.app/",
     gitlink: "https://github.com/Setone01/Examhyve",
   },
-
   {
-    title: "Africash",
+    title: "Oriki Yoruba",
     stack: "REACT JS + TAILWIND CSS",
-    desc: "Africash is a digital ecosystem designed to make Africa fintech one. Coming soon, not responsive",
-    live: "https://africashh.netlify.app/",
-    gitlink: " ",
-  },
-  {
-    title: "Portfolio v1",
-    stack: "REACT JS + STYLED-COMPONENT",
-    desc: "My portfolio website containing projects worked on and other informations about me.",
-    live: "https://setone.netlify.app/",
-    gitlink: "https://github.com/olufemi09/setonhacks",
+    desc: "Oriki is a Yoruba language based app, used in streaming regional Eulogy across Yoruba empire.",
+    live: "https://orikiyoruba.netlify.app/",
+    gitlink: "",
   },
 ];
 
