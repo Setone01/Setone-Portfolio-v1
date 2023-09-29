@@ -16,9 +16,11 @@ const Hero = () => {
         </div>
         <div className="contentBottom">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-            aliquam quis iure laborum delectus sunt illum! Ex odit ipsum dolore
-            sed autem nostrum ipsa cum, quis illo, dolorum ut nulla dolores
+            An experienced Frontend developer with knowledge of building
+            seamless, responsive and quality product of high scalability.
+            Possesses strong analytical skills and knowledge of building from
+            component architecture to state management. Proficient in HTML, CSS,
+            Tailwind, Javascript, React and Typescript.
           </p>
         </div>
       </div>

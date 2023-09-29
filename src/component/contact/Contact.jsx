@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import resume from "../../assets/Fem Athonnagbo.pdf";
+// import resume from "../../assets/Fem Athonnagbo.pdf";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { FaEnvelope } from "react-icons/fa";
 import { useState } from "react";
@@ -29,7 +29,10 @@ const Contact = () => {
         </Para>
         <Btn data-aos="fade-up" data-aos-duration="3000">
           <Btn1 onClick={handleClick}>Hire Me</Btn1>
-          <Btn2 href={resume} title=" " download>
+          <Btn2
+            href="https://drive.google.com/file/d/1KuYfGN67UZyEe3TZfIVfvcrNX_NAZmts/view?usp=sharing"
+            title=" "
+          >
             Resume
           </Btn2>
         </Btn>

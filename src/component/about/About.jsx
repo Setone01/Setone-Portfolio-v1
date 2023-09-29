@@ -89,9 +89,10 @@ const MainContainer = styled.div`
   .Flex1 p {
     color: #c7caca;
     font-family: "Euclid Circular B";
-    font-size: 1.4rem;
+    // font-family: "Montserrat";
+    font-size: 1.5rem;
     max-width: 60rem;
-    font-weight: 100;
+    font-weight: 200;
     margin-bottom: 1.5rem;
     /* line-height: 1.8em; */
   }
@@ -128,7 +129,7 @@ const MainContainer = styled.div`
     align-items: center;
   }
 
-  .Skill_set  {
+  .Skill_set {
     padding: 0.4rem 1.5rem;
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
@@ -139,7 +140,7 @@ const MainContainer = styled.div`
     z-index: 10;
   }
   .Skill_set h6 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 300;
   }
 

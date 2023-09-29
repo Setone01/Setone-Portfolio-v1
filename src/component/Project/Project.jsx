@@ -22,17 +22,22 @@ const Project = () => {
               data-aos="fade-up"
               data-aos-duration="2000"
             >
-              <h3>{data.title}</h3>
-              <h6>{data.stack}</h6>
-              <p>{data.desc}</p>
+              <div className="">
+                <h3>{data.title}</h3>
+                <h6>{data.stack}</h6>
+                <p>{data.desc}</p>
+              </div>
               <div className="ProjBottom">
                 <a href={data.live}>
                   <FaRegEye /> Live
                 </a>
-                {data.gitlink ? <a href={data.gitlink}>
-                  <IoIosGitBranch /> Code
-                </a> : " "}
-                
+                {data.gitlink ? (
+                  <a href={data.gitlink}>
+                    <IoIosGitBranch /> Code
+                  </a>
+                ) : (
+                  " "
+                )}
               </div>
             </div>
           ))}
@@ -83,19 +88,22 @@ const Section = styled.div`
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.6em;
-    margin-bottom: 2.5rem;
     margin-top: 0.5rem;
     color: #6c7075;
   }
 
   .ProjWrapper {
     width: 100%;
-    min-height: 150px;
+    min-height: 170px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1.2rem;
     background-color: #272626;
-    border-radius: 3px;
-    padding: 1rem 2rem;
+    border-radius: 5px;
+    padding: 1.5rem 2rem;
     row-gap: 0.9rem;
-    align-items: normal;
+    align-self: auto;
   }
   h6 {
     font-size: 1rem;
