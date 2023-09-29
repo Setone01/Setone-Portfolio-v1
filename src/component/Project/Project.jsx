@@ -86,7 +86,7 @@ const Section = styled.div`
 
   p {
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.6em;
     margin-top: 0.5rem;
     color: #6c7075;
@@ -145,7 +145,7 @@ const Section = styled.div`
 
     p {
       font-size: 1.1rem;
-      font-weight: 100;
+      font-weight: 400;
       line-height: 1.7em;
     }
 
