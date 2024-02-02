@@ -42,6 +42,10 @@ const Section = styled.div`
     width: 150px;
     height: 10rem;
   }
+
+  .ProjWrapper p {
+  font-size: 14px;
+  }
 `;
 
 export default ProjUI;
