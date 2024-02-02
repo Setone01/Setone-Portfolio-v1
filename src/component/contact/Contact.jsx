@@ -47,7 +47,7 @@ const Contact = () => {
 
         <Footer>
           <Copyright>
-            <CopyTitle> &copy; Copyright Setone 2022</CopyTitle>
+            <CopyTitle> &copy; Copyright Setone 2024</CopyTitle>
           </Copyright>
           <Socials>
             <a href="https://github.com/Setone01">
