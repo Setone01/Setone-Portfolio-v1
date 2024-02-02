@@ -1,10 +1,10 @@
 export const Proj = [
   {
-    title: "Homly",
-    stack: "REACT JS + TAILWIND CSS",
-    desc: "Homly is an innovative application platform that allows you manage your homes, offices and estates' essentials.",
-    live: "https://homlydemo.netlify.app/",
-    gitlink: "",
+    title: "Beekstore",
+    stack: "REACT JS + REDUX + TAILWIND CSS + FIREBASE",
+    desc: "Beekstore, an e-commerce platform developed using React.js, incorporates Redux as its central store. The application is integrated with the Fakestore API for enhanced functionality.",
+    live: "https://beekstore.vercel.app/",
+    gitlink: "https://github.com/Setone01/beekstore",
   },
   {
     title: "Hotels Fashion",
@@ -21,10 +21,10 @@ export const Proj = [
     gitlink: "https://github.com/Setone01/Examhyve",
   },
   {
-    title: "Oriki Yoruba",
+     title: "Homly",
     stack: "REACT JS + TAILWIND CSS",
-    desc: "Oriki is a Yoruba language based app, used in streaming regional Eulogy across Yoruba empire.",
-    live: "https://orikiyoruba.netlify.app/",
+    desc: "Homly is an innovative application platform that allows you manage your homes, offices and estates' essentials.",
+    live: "https://homlydemo.netlify.app/",
     gitlink: "",
   },
 ];
